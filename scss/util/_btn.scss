@@ -1,0 +1,29 @@
+._btn_concept {
+    background-color: #cf64dc;
+    border-radius: 30px;
+    color: #eeeeee;
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+._btn_cmd {
+    display: flex;
+    justify-content: center;
+}
+
+._btn_cmd button {
+    background-color: #cf64dc;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 10px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+    margin: 30px 0;
+    padding: 20px;
+    width: 50%;
+}
