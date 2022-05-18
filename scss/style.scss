@@ -1,4 +1,7 @@
-@import "./page/style-home";
-@import "./pages/style-menu";
-@import "base";
-@import "./util/btn";
+@import "./varmi/_variables";
+@import "./varmi/_mixins";
+@import "reset";
+@import "base.scss";
+@import "./page/_style-home.scss";
+@import "./pages/_style-menu.scss";
+@import "./util/_btn.scss";

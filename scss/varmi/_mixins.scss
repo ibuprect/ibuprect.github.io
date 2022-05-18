@@ -1,0 +1,7 @@
+@mixin btn($_btn_concept) {
+    border-radius: 25px;
+    box-shadow: $shadow-btn;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: $color-quaternary;
+    cursor: pointer; 
+}
