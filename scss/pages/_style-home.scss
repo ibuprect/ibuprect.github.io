@@ -121,7 +121,7 @@ li {
 }
 
 .cards {
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     display: flex;
 }
@@ -141,6 +141,9 @@ li {
     margin:20px
 }
 
+.restaurant-texte p  {
+    margin-left: 5%;
+}
 .restaurant-image {
     object-fit: cover;
     width: 100%;
@@ -175,7 +178,7 @@ footer a {
 
     .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     }
     .card {
