@@ -1,3 +1,4 @@
+@import url(c:\Users\brant\Documents\openclassroom\P3_Branthonne_Peju_Thommass\scss\reset.css);
 body, html {
   margin: 0;
   font-family: Roboto,sans-serif;
@@ -188,7 +189,7 @@ h5 {
   text-align: center;
   border: 1px solid transparent;
   cursor: pointer;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -296,9 +297,9 @@ li {
 }
 
 .cards {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -324,6 +325,10 @@ li {
           box-shadow: 6px 6px grey;
   position: relative;
   margin: 20px;
+}
+
+.restaurant-texte p {
+  margin-left: 5%;
 }
 
 .restaurant-image {
@@ -364,9 +369,9 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
@@ -603,10 +608,10 @@ footer a {
   border-radius: 30px;
   color: #eeeeee;
   text-align: center;
-  padding: 10px 5px;
+  padding: 5px;
   border: 1px solid transparent;
   cursor: pointer;
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 ._btn_cmd {
