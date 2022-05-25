@@ -1,4 +1,3 @@
-@import url(c:\Users\brant\Documents\openclassroom\P3_Branthonne_Peju_Thommass\scss\reset.css);
 body, html {
   margin: 0;
   font-family: Roboto,sans-serif;
@@ -485,8 +484,8 @@ footer a {
   background-color: #99e2d0;
   -webkit-transition: 0.4s 0.1s;
   transition: 0.4s 0.1s;
-  height: 104;
-  margin-top: -45;
+  height: 104px;
+  margin-top: -45px;
   border-radius: 0px 10px 10px 0px;
 }
 
