@@ -489,6 +489,15 @@ footer a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .entree {
+    width: 400px;
+  }
+  .plat {
+    width: 400px;
+  }
+  .dessert {
+    width: 400px;
+  }
 }
 
 .entree {
@@ -610,6 +619,7 @@ footer a {
   min-width: 160px;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 1.1em;
 }
 
 .mebu span {
