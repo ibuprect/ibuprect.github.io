@@ -1,12 +1,12 @@
-._btn_concept {
-    background-color: #cf64dc;
-    border-radius: 30px;
-    color: #eeeeee;
-    text-align: center;
-    padding: 5px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    font-size: 1.5em;
+._btn_concept  {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
 }
 
 ._btn_cmd {
@@ -15,7 +15,7 @@
 }
 
 ._btn_cmd button {
-    background-color: #cf64dc;
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     border: 1px solid transparent;
     border-radius: 30px;
     padding: 10px 5px;
@@ -26,4 +26,15 @@
     margin: 30px 0;
     padding: 20px;
     width: 50%;
+}
+
+@media screen and (min-width: 1280px) {
+  ._btn_cmd button {
+    width: 25%;
+  }
+}
+._btn_cmd button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
 }

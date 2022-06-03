@@ -1,4 +1,4 @@
-@import url(c:\Users\brant\Documents\openclassroom\P3_Branthonne_Peju_Thommass\scss\reset.css);
+@import url(c:\Users\brant\Documents\openclassroom\projet finis\P3_Branthonne_Peju_Thommass\scss\reset.css);
 body, html {
   margin: 0;
   font-family: Roboto,sans-serif;
@@ -162,6 +162,7 @@ h5 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 25px;
+  height: 10px;
   margin: 15px 20px 15px 30px;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 8px 2px #c4c4c4;
@@ -182,14 +183,11 @@ h5 {
   color: #9356dc;
 }
 
-._btn_concept {
-  background-color: #cf64dc;
-  border-radius: 30px;
-  color: #eeeeee;
-  text-align: center;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-size: 1.5em;
+._btn_concept:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  -webkit-box-shadow: 4px 4px 6px #000;
+          box-shadow: 4px 4px 6px #000;
 }
 
 h4 {
@@ -205,6 +203,18 @@ h4 {
           margin-inline-end: 0px;
   font-weight: bold;
   margin-left: 5%;
+}
+
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul {
@@ -321,14 +331,36 @@ li {
 
 .card {
   border-radius: 25px;
-  -webkit-box-shadow: 6px 6px grey;
-          box-shadow: 6px 6px grey;
+  -webkit-box-shadow: 1px 1px #3f3f3f;
+          box-shadow: 1px 1px #3f3f3f;
   position: relative;
   margin: 20px;
 }
 
+.restaurant-texte {
+  margin-right: 2%;
+}
+
 .restaurant-texte p {
   margin-left: 5%;
+}
+
+.fill {
+  color: black;
+  cursor: pointer;
+}
+
+.fill:hover {
+  -webkit-animation: fill 0.3s ease-in-out;
+          animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .restaurant-image {
@@ -523,6 +555,7 @@ footer a {
 .mebu:hover .ok-icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+  color: green;
 }
 
 @-webkit-keyframes fadein {
@@ -543,6 +576,18 @@ footer a {
   }
 }
 
+.mebu-titre {
+  padding-left: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.ligne {
+  width: 40px;
+  border: 2px solid #99E2D0;
+  margin-top: -2%;
+}
+
 .mebu {
   background-color: #fff;
   border-radius: 15px;
@@ -553,13 +598,18 @@ footer a {
   position: relative;
   cursor: pointer;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
-  -webkit-animation: appearance 2s;
-          animation: appearance 2s;
+  -webkit-transition: padding-right 450ms ease-in-out;
+  transition: padding-right 450ms ease-in-out;
 }
 
 .mebu h4 {
   margin: 0;
+  text-overflow: ellipsis;
+  min-width: 160px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .mebu span {
@@ -579,6 +629,14 @@ footer a {
   line-height: 1.5em;
 }
 
+.infos p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 160px;
+  margin: 0;
+}
+
 ._btn_cmd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,32 +644,19 @@ footer a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-._btn_cmd button {
-  background-color: #cf64dc;
-  border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 10px 5px;
-  color: #fff;
-  font-weight: bold;
-  -webkit-box-shadow: 4px 4px 6px #aaa;
-          box-shadow: 4px 4px 6px #aaa;
-  cursor: pointer;
-  margin: 30px 0;
-  padding: 20px;
-  width: 50%;
 }
 
 ._btn_concept {
-  background-color: #cf64dc;
-  border-radius: 30px;
-  color: #eeeeee;
-  text-align: center;
-  padding: 5px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-shadow: 4px 4px 6px #aaa;
+          box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  font-size: 1.5em;
 }
 
 ._btn_cmd {
@@ -624,7 +669,8 @@ footer a {
 }
 
 ._btn_cmd button {
-  background-color: #cf64dc;
+  background-image: -webkit-gradient(linear, right top, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
   padding: 10px 5px;
@@ -636,5 +682,18 @@ footer a {
   margin: 30px 0;
   padding: 20px;
   width: 50%;
+}
+
+@media screen and (min-width: 1280px) {
+  ._btn_cmd button {
+    width: 25%;
+  }
+}
+
+._btn_cmd button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  -webkit-box-shadow: 4px 4px 6px #000;
+          box-shadow: 4px 4px 6px #000;
 }
 /*# sourceMappingURL=style.css.map */
